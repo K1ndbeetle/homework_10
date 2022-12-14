@@ -13,6 +13,13 @@ public class Main {
         int clientOS = 0;
         int clientDeviceYear = 2015;
         checkOS (clientOS, clientDeviceYear);
+        System.out.println();
+
+        //task №3
+        System.out.println("Задача №3");
+        int deliveryDistance = 95;
+        distanceCalculation (deliveryDistance);
+        System.out.println();
     }
 
     //task №1
@@ -39,5 +46,18 @@ public class Main {
          if (clientOS < 0 || clientOS > 2) {
              System.out.println("У вас неизвестная версия ОС");
          }
+    }
+
+    //task №3
+    public static void distanceCalculation (int deliveryDistance) {
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: 1");
+        }
+        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            System.out.println("Потребуется дней: 2");
+        }
+        if (deliveryDistance >= 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: 3");
+        }
     }
 }
